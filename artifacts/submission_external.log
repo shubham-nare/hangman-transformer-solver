@@ -1,0 +1,39 @@
+﻿device=cuda  words=250,000  checkpoint=artifacts\run5\best_model.pt
+========================================================================
+WARNING: building with EXTERNAL word lists:
+  - data\nltk_words.txt
+  - data\sowpods.txt
+This output VIOLATES competition rules (no external dictionary
+may train or inform a Submission) and would be caught at
+top-finisher code review. Reference use only -- do not submit.
+========================================================================
+Building vocabulary index (competition data only)...
+  data\nltk_words.txt: 234,375 words
+  data\sowpods.txt: 267,751 words
+  Combined: 397,745 unique words (built in 0.7s)
+
+Using HybridPolicy (alpha_pivot=300.0, T=1.0)
+python : C:\Users\kumar\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\_core\_methods.py:52: RuntimeWarning: overflow encountered in reduce
+At line:1 char:382
++ ... Hackathon"; python -u -m scripts.generate_submission --checkpoint art ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\kumar\...tered in reduce:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+
+played in 21.8 min  (191 words/s)
+win rate    : 86.2152%
+total wrong : 593,569
+mean wrong  : 2.3743
+LB score~   : 86.1869
+
+wrote submission_external.csv
+
+Submission: VALID
+  rows            : 250,000
+  win rate        : 86.2152%
+  total wrong     : 593,569
+  mean wrong/word : 2.3743
+  wasted guesses  : 0 (emitted after termination)
+  est. LB score   : 86.1869

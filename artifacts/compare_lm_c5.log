@@ -1,0 +1,14 @@
+﻿playing 8,000 HELD-OUT TRAIN words (test.txt untouched)
+
+building Kneser-Ney order-6 (sparse)...
+  ppl=6.377  141 MB  in 69s
+  Kneser-Ney order-6            win= 73.85%  wrong=3.144  (26s)
+
+neural LM: context=5  params=1,791,579  ppl=6.561
+tabulating...
+  (14348907, 27)  1.55 GB  in 75s
+  Neural Transformer LM         win= 72.20%  wrong=3.256  (26s)
+
+neural vs Kneser-Ney at context 5:
+  delta=-1.65 pts   newly_won=309  newly_lost=441  p=0.0000
+  -> SIGNIFICANT: Kneser-Ney wins

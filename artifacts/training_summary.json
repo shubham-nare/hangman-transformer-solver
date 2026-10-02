@@ -1,0 +1,55 @@
+{
+  "best_win_rate": 13.333333333333334,
+  "checkpoint": "artifacts\\best_model.pt",
+  "history": [
+    {
+      "games": 120,
+      "win_rate": 12.5,
+      "total_wrong": 685,
+      "mean_wrong": 5.708333333333333,
+      "step": 60
+    },
+    {
+      "games": 120,
+      "win_rate": 13.333333333333334,
+      "total_wrong": 683,
+      "mean_wrong": 5.691666666666666,
+      "step": 120
+    }
+  ],
+  "model_config": {
+    "d_model": 384,
+    "n_heads": 8,
+    "n_layers": 6,
+    "dim_feedforward": 1536,
+    "dropout": 0.1,
+    "max_length": 32,
+    "n_letters": 26,
+    "use_position_head": true
+  },
+  "training_config": {
+    "steps": 120,
+    "batch_size": 64,
+    "learning_rate": 0.0004,
+    "weight_decay": 0.01,
+    "warmup_steps": 500,
+    "grad_clip": 1.0,
+    "eval_every": 60,
+    "eval_words": 120,
+    "log_every": 100,
+    "uniform_order_probability": 0.25,
+    "exploration_temperature": 1.0,
+    "seed": 424242,
+    "amp": true,
+    "position_loss_weight": 1.0,
+    "position_weight": 0.5,
+    "self_play_start_step": 0,
+    "self_play_refresh_every": 5000,
+    "self_play_words": 20000,
+    "self_play_fraction": 0.0,
+    "presence_objective": "count",
+    "ema_decay": 0.0,
+    "ema_warmup_steps": 1000
+  },
+  "minutes": 0.0599547783320304
+}

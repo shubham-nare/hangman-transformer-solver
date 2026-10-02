@@ -1,0 +1,14 @@
+﻿playing 8,000 HELD-OUT TRAIN words (test.txt untouched)
+
+order 6:
+  ppl=6.377
+  order 6               win= 73.85%  wrong=3.144  (26s)
+
+order 7:
+  ppl=6.261
+  table 1.68 GB in 115s
+  order 7               win= 74.09%  wrong=3.123  (26s)
+
+order 7 vs order 6:
+  delta=+0.24 pts   newly_won=198  newly_lost=179  p=0.3278
+  -> indistinguishable; keep order 6 (smaller table, already shipped)

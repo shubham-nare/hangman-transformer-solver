@@ -1,0 +1,21 @@
+﻿fitting order-6 LM (memory-safe proxy; truncation behaviour is order-independent)...
+collecting states from 1,500 games...
+  15,047 states
+
+states by blank count (where the beam runs):
+    1 blanks:   1,725
+    2 blanks:   1,951
+    3 blanks:   1,931
+    4 blanks:   1,775
+    5 blanks:   1,635
+    6 blanks:   1,376
+    7 blanks:   1,210
+    8 blanks:   1,077
+    9 blanks:     759
+   10 blanks:     539
+
+enumeration engaged on 5,607 of 15,047 states (37.3%)
+decisions changed:      243 (4.33% of engaged, 1.615% of all states)
+max prob shift:         mean 1.86e-02  p99 2.04e-01  max 7.88e-01
+changed by blank count: {3: 207, 2: 36}
+(5s)

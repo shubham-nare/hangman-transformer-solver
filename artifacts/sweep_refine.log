@@ -1,0 +1,24 @@
+﻿
+fitting CharKN(order=5) on 205,300 words...
+  held-out ppl 6.934
+building dense table...
+  (531441, 27)  57 MB  in 46s
+
+playing 5,000 HELD-OUT TRAIN words per config
+
+max_blanks=10  beam_width=200:
+    weight=0.30                     win= 70.86%  wrong=3.439  (15s)
+    weight=0.38                     win= 71.34%  wrong=3.426  (14s)
+    weight=0.45                     win= 71.16%  wrong=3.428  (14s)
+
+max_blanks=10  beam_width=800:
+    weight=0.30                     win= 70.70%  wrong=3.425  (32s)
+    weight=0.38                     win= 71.14%  wrong=3.413  (32s)
+    weight=0.45                     win= 71.22%  wrong=3.407  (32s)
+
+max_blanks=16  beam_width=200:
+    weight=0.30                     win= 70.84%  wrong=3.437  (16s)
+    weight=0.38                     win= 71.34%  wrong=3.424  (16s)
+    weight=0.45                     win= 71.28%  wrong=3.424  (16s)
+
+max_blanks=16  beam_width=800:

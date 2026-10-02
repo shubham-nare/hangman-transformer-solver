@@ -1,0 +1,31 @@
+﻿
+fitting CharKN(order=6) on 205,300 words...
+  held-out ppl 6.392
+building sparse table...
+  sparse  table=(773212, 27)  141 MB  in 70s
+
+ensembling 2 models: artifacts/run5/best_model.pt + artifacts/run4/best_model.pt
+playing 4,000 HELD-OUT TRAIN words per config
+
+max_blanks=10  beam_width=200  blank_pivot=None  nn_weight=0.0:
+    weight=0.38                     win= 71.72%  wrong=3.317  (24s)
+
+BEST: mb10_bw200_pNone_nn0.0_w0.38  ->  71.72%
+
+per-length: neural-only vs mb10_bw200_pNone_nn0.0_w0.38
+ len      n    neural     best    delta
+   3     47      6.4%     6.4%     +0.0
+   4     90     16.7%    16.7%     +0.0
+   5    204     20.1%    20.1%     +0.0
+   6    322     35.4%    35.4%     +0.0
+   7    479     51.4%    51.4%     +0.0
+   8    583     67.4%    67.4%     +0.0
+   9    530     80.4%    80.4%     +0.0
+  10    466     88.8%    88.8%     +0.0
+  11    410     92.7%    92.7%     +0.0
+  12    303     96.0%    96.0%     +0.0
+  13    227     98.2%    98.2%     +0.0
+  14    145     97.2%    97.2%     +0.0
+  15     85     98.8%    98.8%     +0.0
+  16     47     95.7%    95.7%     +0.0
+  17     32    100.0%   100.0%     +0.0

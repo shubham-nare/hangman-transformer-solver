@@ -1,0 +1,15 @@
+﻿
+fitting CharKN(order=7) on 205,300 words...
+  held-out ppl 6.143
+building sparse table (build_sparse_table_order7)...
+  sparse  table=(1205090, 27)  1680 MB  in 112s
+
+playing 20,000 HELD-OUT TRAIN words per config
+
+pos_w=0.25  exact_below=0  max_blanks=10  beam_width=200  blank_pivot=None  nn_weight=0.0:
+    weight=0.50 min_len=0           win= 72.65%  wrong=3.203  (66s)
+
+pos_w=0.25  exact_below=0  max_blanks=10  beam_width=800  blank_pivot=None  nn_weight=0.0:
+    weight=0.50 min_len=0           win= 72.78%  wrong=3.180  (199s)
+
+BEST: pw0.25_ex0_mb10_bw800_pNone_nn0.0_w0.5_mwl0  ->  72.78%

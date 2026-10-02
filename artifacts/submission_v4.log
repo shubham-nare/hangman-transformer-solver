@@ -1,0 +1,6 @@
+device=cuda  words=250,000  checkpoint=artifacts\run6\best_model.pt
+fitting CharKN(order=7) on 225,300 train words...
+  fitted in 8s
+  building sparse table (build_sparse_table_order7)...
+  sparse table=(1240871, 27)  1684 MB  in 121s
+Using BlendPolicy (neural + char-LM beam; weight=0.56, order=7, beam=800, max_blanks=10)

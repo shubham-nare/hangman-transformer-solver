@@ -1,0 +1,29 @@
+﻿train=205,300  held-out=3,000
+training pairs: 2,125,115
+parameters: 1,791,579
+
+step   500/8000  loss 2.2448  held-out ppl 8.435  lr 1.98e-03  7 steps/s
+step  1000/8000  loss 2.1028  held-out ppl 7.823  lr 1.92e-03  7 steps/s
+step  1500/8000  loss 2.0482  held-out ppl 7.496  lr 1.83e-03  7 steps/s
+step  2000/8000  loss 2.0128  held-out ppl 7.306  lr 1.71e-03  7 steps/s
+step  2500/8000  loss 1.9883  held-out ppl 7.122  lr 1.56e-03  7 steps/s
+step  3000/8000  loss 1.9635  held-out ppl 7.011  lr 1.38e-03  7 steps/s
+step  3500/8000  loss 1.9468  held-out ppl 6.919  lr 1.20e-03  7 steps/s
+step  4000/8000  loss 1.9345  held-out ppl 6.841  lr 1.00e-03  7 steps/s
+step  4500/8000  loss 1.9199  held-out ppl 6.763  lr 8.05e-04  7 steps/s
+step  5000/8000  loss 1.9080  held-out ppl 6.707  lr 6.18e-04  7 steps/s
+step  5500/8000  loss 1.8960  held-out ppl 6.654  lr 4.45e-04  7 steps/s
+step  6000/8000  loss 1.8876  held-out ppl 6.623  lr 2.93e-04  7 steps/s
+step  6500/8000  loss 1.8797  held-out ppl 6.585  lr 1.69e-04  7 steps/s
+step  7000/8000  loss 1.8745  held-out ppl 6.574  lr 7.63e-05  7 steps/s
+step  7500/8000  loss 1.8714  held-out ppl 6.564  lr 1.93e-05  7 steps/s
+step  8000/8000  loss 1.8701  held-out ppl 6.561  lr 7.71e-11  7 steps/s
+
+model                               context  held-out ppl
+NeuralCharLM                              5         6.561
+CharKN (order 6)                          5         6.377
+-> KNESER-NEY generalises better on unseen words (2.9% difference)
+
+saved artifacts\neural_lm_c5\neural_lm.pt
+
+skipping tabulation (--skip-tabulate)

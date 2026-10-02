@@ -1,0 +1,65 @@
+﻿[01:53:31] === overnight finish starting ===
+[03:11:32] run6 finished: artifacts\run6\training_summary.json present
+[03:11:32] artifacts\run5\best_model.pt: step=57500 win_rate=67.12%
+[03:11:32] artifacts\run6\best_model.pt: step=82500 win_rate=69.50%
+[03:11:32] scoring on 20,000 HELD-OUT TRAIN words (test.txt untouched)
+[03:11:32] fitting CharKN(order=6) on the training split...
+[03:12:42] evaluating three policies on identical words:
+[03:13:44]   run5 + blend           win= 71.57%  wrong=3.306  (62s)
+[03:14:47]   run6 + blend           win= 74.12%  wrong=3.145  (63s)
+[03:16:01]   run5+run6 + blend      win= 73.22%  wrong=3.204  (74s)
+[03:16:01] 
+paired comparisons vs run5 (McNemar):
+[03:16:01]   run6       delta=+2.55pts  newly_won=871 newly_lost=361  p=0.0000  SIGNIFICANT
+[03:16:01]   ensemble   delta=+1.65pts  newly_won=538 newly_lost=209  p=0.0000  SIGNIFICANT
+[03:16:01] 
+DECISION: run6
+[03:16:01] regenerating: C:\Users\kumar\AppData\Local\Programs\Python\Python310\python.exe -u -m scripts.generate_submission --checkpoint artifacts\run6\best_model.pt --output submission_run6.csv --use-blend --lm-order 6 --beam-width 200 --max-blanks 10 --blend-weight 0.38 --position-weight 0.5
+device=cuda  words=250,000  checkpoint=artifacts\run6\best_model.pt
+fitting CharKN(order=6) on 225,300 train words...
+  fitted in 4s
+  building sparse table...
+  sparse table=(784285, 27)  142 MB  in 67s
+Using BlendPolicy (neural + char-LM beam; weight=0.38, order=6, beam=200, max_blanks=10)
+  turn  1: 249,999 active,       1/250,000 finished (  0.0%)  1.6 min
+  turn  2: 249,999 active,       1/250,000 finished (  0.0%)  3.2 min
+  turn  3: 249,955 active,      45/250,000 finished (  0.0%)  5.0 min
+  turn  4: 249,721 active,     279/250,000 finished (  0.1%)  6.9 min
+  turn  5: 248,656 active,   1,344/250,000 finished (  0.5%)  8.5 min
+  turn  6: 244,564 active,   5,436/250,000 finished (  2.2%)  10.0 min
+  turn  7: 231,110 active,  18,890/250,000 finished (  7.6%)  11.3 min
+  turn  8: 201,457 active,  48,543/250,000 finished ( 19.4%)  12.3 min
+  turn  9: 154,477 active,  95,523/250,000 finished ( 38.2%)  13.0 min
+  turn 10:  99,686 active, 150,314/250,000 finished ( 60.1%)  13.5 min
+  turn 11:  51,983 active, 198,017/250,000 finished ( 79.2%)  13.8 min
+  turn 12:  21,178 active, 228,822/250,000 finished ( 91.5%)  14.0 min
+  turn 13:   6,806 active, 243,194/250,000 finished ( 97.3%)  14.0 min
+  turn 14:   1,651 active, 248,349/250,000 finished ( 99.3%)  14.1 min
+  turn 15:     350 active, 249,650/250,000 finished ( 99.9%)  14.1 min
+  turn 16:      68 active, 249,932/250,000 finished (100.0%)  14.1 min
+  turn 17:      16 active, 249,984/250,000 finished (100.0%)  14.1 min
+  turn 18:       0 active, 250,000/250,000 finished (100.0%)  14.1 min
+
+played in 14.1 min  (296 words/s)
+win rate    : 76.6076%
+total wrong : 764,547
+mean wrong  : 3.0582
+LB score~   : 76.5712
+
+wrote submission_run6.csv
+
+Submission: VALID
+  rows            : 250,000
+  win rate        : 76.6076%
+  total wrong     : 764,547
+  mean wrong/word : 3.0582
+  wasted guesses  : 0 (emitted after termination)
+  est. LB score   : 76.5712
+
+[03:31:29] generated submission_run6.csv: 250,001 lines, score=76.6076
+[03:31:29] PROMOTED: 76.6076% is the new submission (all three filenames)
+wrote submission_notebook.ipynb (180.0 KB, 16 modules inlined)
+  384d / 6L, batch 1024, 60,000 steps
+
+[03:31:29] notebook rebuilt and backed up
+[03:31:29] === overnight finish complete ===

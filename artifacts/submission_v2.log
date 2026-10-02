@@ -1,0 +1,41 @@
+﻿device=cuda  words=250,000  checkpoint=artifacts\run6\best_model.pt
+fitting CharKN(order=7) on 225,300 train words...
+  fitted in 8s
+  building sparse table (build_sparse_table_order7)...
+  sparse table=(1240871, 27)  1684 MB  in 129s
+Using BlendPolicy (neural + char-LM beam; weight=0.5, order=7, beam=800, max_blanks=10)
+  turn  1: 250,000 active,       0/250,000 finished (  0.0%)  4.2 min
+  turn  2: 249,999 active,       1/250,000 finished (  0.0%)  8.8 min
+  turn  3: 249,961 active,      39/250,000 finished (  0.0%)  13.8 min
+  turn  4: 249,723 active,     277/250,000 finished (  0.1%)  18.3 min
+  turn  5: 248,691 active,   1,309/250,000 finished (  0.5%)  22.4 min
+  turn  6: 244,361 active,   5,639/250,000 finished (  2.3%)  25.8 min
+  turn  7: 230,327 active,  19,673/250,000 finished (  7.9%)  28.8 min
+  turn  8: 199,086 active,  50,914/250,000 finished ( 20.4%)  30.6 min
+  turn  9: 150,082 active,  99,918/250,000 finished ( 40.0%)  31.9 min
+  turn 10:  93,601 active, 156,399/250,000 finished ( 62.6%)  32.7 min
+  turn 11:  46,266 active, 203,734/250,000 finished ( 81.5%)  33.2 min
+  turn 12:  17,634 active, 232,366/250,000 finished ( 92.9%)  33.5 min
+  turn 13:   5,301 active, 244,699/250,000 finished ( 97.9%)  33.6 min
+  turn 14:   1,219 active, 248,781/250,000 finished ( 99.5%)  33.6 min
+  turn 15:     277 active, 249,723/250,000 finished ( 99.9%)  33.6 min
+  turn 16:      53 active, 249,947/250,000 finished (100.0%)  33.6 min
+  turn 17:      11 active, 249,989/250,000 finished (100.0%)  33.6 min
+  turn 18:       1 active, 249,999/250,000 finished (100.0%)  33.6 min
+  turn 19:       0 active, 250,000/250,000 finished (100.0%)  33.6 min
+
+played in 33.6 min  (124 words/s)
+win rate    : 77.5808%
+total wrong : 734,156
+mean wrong  : 2.9366
+LB score~   : 77.5458
+
+wrote submission_v2.csv
+
+Submission: VALID
+  rows            : 250,000
+  win rate        : 77.5808%
+  total wrong     : 734,156
+  mean wrong/word : 2.9366
+  wasted guesses  : 0 (emitted after termination)
+  est. LB score   : 77.5458

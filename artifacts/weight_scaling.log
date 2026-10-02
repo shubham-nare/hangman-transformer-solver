@@ -1,0 +1,21 @@
+﻿=== LM trained on 140000 words ===
+pos_w=0.5  exact_below=0  max_blanks=10  beam_width=200  blank_pivot=None  nn_weight=0.0:
+weight=0.26                     win= 74.74%  wrong=3.147  (27s)
+weight=0.38                     win= 74.16%  wrong=3.156  (26s)
+weight=0.50                     win= 73.14%  wrong=3.197  (31s)
+BEST: pw0.5_ex0_mb10_bw200_pNone_nn0.0_w0.26  ->  74.74%
+len      n    neural     best    delta
+=== LM trained on 175000 words ===
+pos_w=0.5  exact_below=0  max_blanks=10  beam_width=200  blank_pivot=None  nn_weight=0.0:
+weight=0.26                     win= 74.92%  wrong=3.138  (26s)
+weight=0.38                     win= 74.41%  wrong=3.145  (26s)
+weight=0.50                     win= 73.66%  wrong=3.183  (26s)
+BEST: pw0.5_ex0_mb10_bw200_pNone_nn0.0_w0.26  ->  74.92%
+len      n    neural     best    delta
+=== LM trained on 205300 words ===
+pos_w=0.5  exact_below=0  max_blanks=10  beam_width=200  blank_pivot=None  nn_weight=0.0:
+weight=0.26                     win= 75.19%  wrong=3.123  (29s)
+weight=0.38                     win= 74.30%  wrong=3.131  (39s)
+weight=0.50                     win= 73.84%  wrong=3.155  (26s)
+BEST: pw0.5_ex0_mb10_bw200_pNone_nn0.0_w0.26  ->  75.19%
+len      n    neural     best    delta

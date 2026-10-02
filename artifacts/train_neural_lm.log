@@ -1,0 +1,23 @@
+﻿train=205,300  held-out=3,000
+training pairs: 2,125,115
+parameters: 801,051
+
+step   500/5000  loss 2.2914  held-out ppl 8.810  lr 1.95e-03  13 steps/s
+step  1000/5000  loss 2.1551  held-out ppl 8.247  lr 1.81e-03  13 steps/s
+step  1500/5000  loss 2.1075  held-out ppl 7.932  lr 1.59e-03  13 steps/s
+step  2000/5000  loss 2.0774  held-out ppl 7.740  lr 1.31e-03  13 steps/s
+step  2500/5000  loss 2.0576  held-out ppl 7.611  lr 1.00e-03  13 steps/s
+step  3000/5000  loss 2.0366  held-out ppl 7.505  lr 6.92e-04  13 steps/s
+step  3500/5000  loss 2.0236  held-out ppl 7.446  lr 4.13e-04  13 steps/s
+step  4000/5000  loss 2.0161  held-out ppl 7.380  lr 1.91e-04  13 steps/s
+step  4500/5000  loss 2.0089  held-out ppl 7.352  lr 4.91e-05  13 steps/s
+step  5000/5000  loss 2.0068  held-out ppl 7.343  lr 1.97e-10  13 steps/s
+
+model                               context  held-out ppl
+NeuralCharLM                              4         7.343
+CharKN (order 5)                          4         6.925
+-> KNESER-NEY generalises better on unseen words (6.0% difference)
+
+saved artifacts\neural_lm\neural_lm.pt
+tabulating all contexts...
+  (531441, 27)  57 MB  in 2s

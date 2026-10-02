@@ -1,0 +1,16 @@
+﻿fitting CharKN(order=7)...
+  fit 7s  ppl 6.196
+building three-level sparse table...
+  built 109s  index=(387420489,) table=(1204476, 27)  1.68 GB
+
+       board   slow   fast     maxdiff  agree
+       _pp_e      o      o    2.89e-08  yes
+       h_ll_      a      a    5.94e-08  yes
+        ____      a      a    2.20e-08  yes
+      _a_a_e      g      g    1.20e-08  yes
+      st___g      n      n    1.80e-08  yes
+    ____tion      e      e    1.79e-08  yes
+  un____able      o      o    2.94e-08  yes
+
+VERDICT: PASS
+per-call 0.142 ms

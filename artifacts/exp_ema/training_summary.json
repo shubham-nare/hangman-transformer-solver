@@ -1,0 +1,97 @@
+{
+  "best_win_rate": 58.26,
+  "checkpoint": "artifacts\\exp_ema\\best_model.pt",
+  "history": [
+    {
+      "games": 5000,
+      "win_rate": 41.6,
+      "total_wrong": 24393,
+      "mean_wrong": 4.8786,
+      "step": 2500
+    },
+    {
+      "games": 5000,
+      "win_rate": 50.28,
+      "total_wrong": 22766,
+      "mean_wrong": 4.5532,
+      "step": 5000
+    },
+    {
+      "games": 5000,
+      "win_rate": 53.08,
+      "total_wrong": 22050,
+      "mean_wrong": 4.41,
+      "step": 7500
+    },
+    {
+      "games": 5000,
+      "win_rate": 55.58,
+      "total_wrong": 21506,
+      "mean_wrong": 4.3012,
+      "step": 10000
+    },
+    {
+      "games": 5000,
+      "win_rate": 57.08,
+      "total_wrong": 21095,
+      "mean_wrong": 4.219,
+      "step": 12500
+    },
+    {
+      "games": 5000,
+      "win_rate": 57.74,
+      "total_wrong": 20899,
+      "mean_wrong": 4.1798,
+      "step": 15000
+    },
+    {
+      "games": 5000,
+      "win_rate": 58.04,
+      "total_wrong": 20798,
+      "mean_wrong": 4.1596,
+      "step": 17500
+    },
+    {
+      "games": 5000,
+      "win_rate": 58.26,
+      "total_wrong": 20773,
+      "mean_wrong": 4.1546,
+      "step": 20000
+    }
+  ],
+  "model_config": {
+    "d_model": 256,
+    "n_heads": 8,
+    "n_layers": 4,
+    "dim_feedforward": 768,
+    "dropout": 0.1,
+    "max_length": 32,
+    "n_letters": 26,
+    "use_position_head": true
+  },
+  "training_config": {
+    "steps": 20000,
+    "batch_size": 1024,
+    "learning_rate": 0.0004,
+    "weight_decay": 0.01,
+    "warmup_steps": 500,
+    "grad_clip": 1.0,
+    "eval_every": 2500,
+    "eval_words": 5000,
+    "log_every": 100,
+    "uniform_order_probability": 0.25,
+    "exploration_temperature": 1.0,
+    "seed": 20260901,
+    "amp": true,
+    "position_loss_weight": 1.0,
+    "position_weight": 0.5,
+    "self_play_start_step": 0,
+    "self_play_refresh_every": 4000,
+    "self_play_words": 20000,
+    "self_play_fraction": 0.5,
+    "presence_objective": "count",
+    "ema_decay": 0.999,
+    "ema_warmup_steps": 1000
+  },
+  "minutes": 54.51971907499998
+}

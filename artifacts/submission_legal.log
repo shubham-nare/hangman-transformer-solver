@@ -1,0 +1,18 @@
+﻿device=cuda  words=250,000  checkpoint=artifacts\run5\best_model.pt
+Using NeuralPolicy (pure neural, no vocab)
+
+played in 2.7 min  (1,556 words/s)
+win rate    : 68.7988%
+total wrong : 877,952
+mean wrong  : 3.5118
+LB score~   : 68.7570
+
+wrote submission_legal.csv
+
+Submission: VALID
+  rows            : 250,000
+  win rate        : 68.7988%
+  total wrong     : 877,952
+  mean wrong/word : 3.5118
+  wasted guesses  : 0 (emitted after termination)
+  est. LB score   : 68.7570

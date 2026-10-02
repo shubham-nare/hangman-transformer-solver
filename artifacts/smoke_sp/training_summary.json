@@ -1,0 +1,52 @@
+{
+  "best_win_rate": 11.666666666666666,
+  "checkpoint": "artifacts\\smoke_sp\\best_model.pt",
+  "history": [
+    {
+      "games": 300,
+      "win_rate": 11.333333333333334,
+      "total_wrong": 1729,
+      "mean_wrong": 5.763333333333334,
+      "step": 150
+    },
+    {
+      "games": 300,
+      "win_rate": 11.666666666666666,
+      "total_wrong": 1733,
+      "mean_wrong": 5.776666666666666,
+      "step": 300
+    }
+  ],
+  "model_config": {
+    "d_model": 256,
+    "n_heads": 8,
+    "n_layers": 4,
+    "dim_feedforward": 768,
+    "dropout": 0.1,
+    "max_length": 32,
+    "n_letters": 26,
+    "use_position_head": true
+  },
+  "training_config": {
+    "steps": 300,
+    "batch_size": 256,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "warmup_steps": 500,
+    "grad_clip": 1.0,
+    "eval_every": 150,
+    "eval_words": 300,
+    "log_every": 100,
+    "uniform_order_probability": 0.25,
+    "exploration_temperature": 1.0,
+    "seed": 20260901,
+    "amp": true,
+    "position_loss_weight": 1.0,
+    "position_weight": 0.5,
+    "self_play_start_step": 100,
+    "self_play_refresh_every": 100,
+    "self_play_words": 500,
+    "self_play_fraction": 0.5
+  },
+  "minutes": 0.27504431833334214
+}

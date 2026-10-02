@@ -1,0 +1,8 @@
+﻿0A79D5AF3089E36E  run6_best_model.pt  44662773 bytes
+BE6EBE905ED46D9E  submission.csv  4650598 bytes
+3F96761B772C9241  submission_notebook.ipynb  184319 bytes
+
+Score: 76.6076% win rate, est LB 76.5712, 250,000 rows, VALID
+Model: run6 (d384/6L/ff1536, 11.2M params, seed 424242, step 82500)
+Method: Transformer + order-6 Kneser-Ney char-LM beam posterior, blend 0.38
+Sealed: 2026-09-03 09:57

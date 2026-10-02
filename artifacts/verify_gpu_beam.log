@@ -1,0 +1,14 @@
+﻿collecting real game states...
+  4,028 states
+
+1. CORRECTNESS at beam_width=200 on 600 live states
+   max |diff|        1.000e+00
+   mean |diff|       2.251e-02
+   top-letter agree  93.83%
+   *** FAIL ***
+
+2. THROUGHPUT (600 states)
+   CPU  width  200 :      185 ms
+   GPU  width  200 :      678 ms   (0.3x)
+   GPU  width 1000 :      530 ms   (projected 250k words: 32 min)
+   GPU  width 5000 :      816 ms   (projected 250k words: 50 min)

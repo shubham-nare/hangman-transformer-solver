@@ -1,0 +1,16 @@
+﻿
+vocab: 397,745 words   playing 4,000 test words
+
+pivot=100:
+python : C:\Users\kumar\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\_core\_methods.py:52: RuntimeWarning: overflow encountered in reduce
+At line:1 char:382
++ ... Hackathon"; python -u -m scripts.sweep_criterion --checkpoint artifac ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\kumar\...tered in reduce:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+    criterion=reveals                   win= 86.67%  wrong=2.352  LB~86.647  (33s)
+    criterion=hit                       win= 86.88%  wrong=2.321  LB~86.847  (24s)
+
+pivot=1000:

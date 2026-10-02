@@ -1,0 +1,19 @@
+﻿held-out: 20,000 words   deployed LM size: 225,300
+
+ train_words     order 6     order 7     order 8
+------------------------------------------------
+     100,000      6.6998      6.6456      6.7453
+     140,000      6.5194      6.4450      6.5310
+     175,000      6.4101      6.3120      6.3901
+     205,300      6.3359      6.2251      6.2967
+
+order 8 minus order 7 (negative means order 8 is better):
+ train_words       gap
+     100,000   +0.0997
+     140,000   +0.0861
+     175,000   +0.0780
+     205,300   +0.0716
+
+  trend: -0.00265 per 10k words
+  projected gap at 225,300 words: +0.0653
+  -> order 8 still behind. Crossover would need 471,459 training words.

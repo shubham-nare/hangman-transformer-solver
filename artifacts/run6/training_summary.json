@@ -1,0 +1,293 @@
+{
+  "best_win_rate": 69.5,
+  "checkpoint": "artifacts\\run6\\best_model.pt",
+  "history": [
+    {
+      "games": 2000,
+      "win_rate": 46.3,
+      "total_wrong": 9407,
+      "mean_wrong": 4.7035,
+      "step": 2500
+    },
+    {
+      "games": 2000,
+      "win_rate": 52.95,
+      "total_wrong": 8879,
+      "mean_wrong": 4.4395,
+      "step": 5000
+    },
+    {
+      "games": 2000,
+      "win_rate": 55.8,
+      "total_wrong": 8580,
+      "mean_wrong": 4.29,
+      "step": 7500
+    },
+    {
+      "games": 2000,
+      "win_rate": 56.75,
+      "total_wrong": 8406,
+      "mean_wrong": 4.203,
+      "step": 10000
+    },
+    {
+      "games": 2000,
+      "win_rate": 59.05,
+      "total_wrong": 8190,
+      "mean_wrong": 4.095,
+      "step": 12500
+    },
+    {
+      "games": 2000,
+      "win_rate": 60.6,
+      "total_wrong": 8030,
+      "mean_wrong": 4.015,
+      "step": 15000
+    },
+    {
+      "games": 2000,
+      "win_rate": 61.8,
+      "total_wrong": 7874,
+      "mean_wrong": 3.937,
+      "step": 17500
+    },
+    {
+      "games": 2000,
+      "win_rate": 62.2,
+      "total_wrong": 7778,
+      "mean_wrong": 3.889,
+      "step": 20000
+    },
+    {
+      "games": 2000,
+      "win_rate": 63.65,
+      "total_wrong": 7749,
+      "mean_wrong": 3.8745,
+      "step": 22500
+    },
+    {
+      "games": 2000,
+      "win_rate": 62.95,
+      "total_wrong": 7733,
+      "mean_wrong": 3.8665,
+      "step": 25000
+    },
+    {
+      "games": 2000,
+      "win_rate": 63.45,
+      "total_wrong": 7637,
+      "mean_wrong": 3.8185,
+      "step": 27500
+    },
+    {
+      "games": 2000,
+      "win_rate": 64.8,
+      "total_wrong": 7549,
+      "mean_wrong": 3.7745,
+      "step": 30000
+    },
+    {
+      "games": 2000,
+      "win_rate": 65.3,
+      "total_wrong": 7469,
+      "mean_wrong": 3.7345,
+      "step": 32500
+    },
+    {
+      "games": 2000,
+      "win_rate": 65.35,
+      "total_wrong": 7392,
+      "mean_wrong": 3.696,
+      "step": 35000
+    },
+    {
+      "games": 2000,
+      "win_rate": 65.7,
+      "total_wrong": 7419,
+      "mean_wrong": 3.7095,
+      "step": 37500
+    },
+    {
+      "games": 2000,
+      "win_rate": 65.35,
+      "total_wrong": 7374,
+      "mean_wrong": 3.687,
+      "step": 40000
+    },
+    {
+      "games": 2000,
+      "win_rate": 65.35,
+      "total_wrong": 7383,
+      "mean_wrong": 3.6915,
+      "step": 42500
+    },
+    {
+      "games": 2000,
+      "win_rate": 65.9,
+      "total_wrong": 7316,
+      "mean_wrong": 3.658,
+      "step": 45000
+    },
+    {
+      "games": 2000,
+      "win_rate": 67.2,
+      "total_wrong": 7259,
+      "mean_wrong": 3.6295,
+      "step": 47500
+    },
+    {
+      "games": 2000,
+      "win_rate": 67.05,
+      "total_wrong": 7268,
+      "mean_wrong": 3.634,
+      "step": 50000
+    },
+    {
+      "games": 2000,
+      "win_rate": 67.55,
+      "total_wrong": 7202,
+      "mean_wrong": 3.601,
+      "step": 52500
+    },
+    {
+      "games": 2000,
+      "win_rate": 68.4,
+      "total_wrong": 7161,
+      "mean_wrong": 3.5805,
+      "step": 55000
+    },
+    {
+      "games": 2000,
+      "win_rate": 68.15,
+      "total_wrong": 7161,
+      "mean_wrong": 3.5805,
+      "step": 57500
+    },
+    {
+      "games": 2000,
+      "win_rate": 67.55,
+      "total_wrong": 7122,
+      "mean_wrong": 3.561,
+      "step": 60000
+    },
+    {
+      "games": 2000,
+      "win_rate": 68.65,
+      "total_wrong": 7081,
+      "mean_wrong": 3.5405,
+      "step": 62500
+    },
+    {
+      "games": 2000,
+      "win_rate": 67.95,
+      "total_wrong": 7097,
+      "mean_wrong": 3.5485,
+      "step": 65000
+    },
+    {
+      "games": 2000,
+      "win_rate": 68.5,
+      "total_wrong": 7062,
+      "mean_wrong": 3.531,
+      "step": 67500
+    },
+    {
+      "games": 2000,
+      "win_rate": 69.05,
+      "total_wrong": 7048,
+      "mean_wrong": 3.524,
+      "step": 70000
+    },
+    {
+      "games": 2000,
+      "win_rate": 69.05,
+      "total_wrong": 7034,
+      "mean_wrong": 3.517,
+      "step": 72500
+    },
+    {
+      "games": 2000,
+      "win_rate": 68.9,
+      "total_wrong": 7014,
+      "mean_wrong": 3.507,
+      "step": 75000
+    },
+    {
+      "games": 2000,
+      "win_rate": 69.0,
+      "total_wrong": 6997,
+      "mean_wrong": 3.4985,
+      "step": 77500
+    },
+    {
+      "games": 2000,
+      "win_rate": 69.3,
+      "total_wrong": 6989,
+      "mean_wrong": 3.4945,
+      "step": 80000
+    },
+    {
+      "games": 2000,
+      "win_rate": 69.5,
+      "total_wrong": 6989,
+      "mean_wrong": 3.4945,
+      "step": 82500
+    },
+    {
+      "games": 2000,
+      "win_rate": 69.25,
+      "total_wrong": 6985,
+      "mean_wrong": 3.4925,
+      "step": 85000
+    },
+    {
+      "games": 2000,
+      "win_rate": 69.5,
+      "total_wrong": 6982,
+      "mean_wrong": 3.491,
+      "step": 87500
+    },
+    {
+      "games": 2000,
+      "win_rate": 69.4,
+      "total_wrong": 6982,
+      "mean_wrong": 3.491,
+      "step": 90000
+    }
+  ],
+  "model_config": {
+    "d_model": 384,
+    "n_heads": 8,
+    "n_layers": 6,
+    "dim_feedforward": 1536,
+    "dropout": 0.1,
+    "max_length": 32,
+    "n_letters": 26,
+    "use_position_head": true
+  },
+  "training_config": {
+    "steps": 90000,
+    "batch_size": 768,
+    "learning_rate": 0.0004,
+    "weight_decay": 0.01,
+    "warmup_steps": 500,
+    "grad_clip": 1.0,
+    "eval_every": 2500,
+    "eval_words": 2000,
+    "log_every": 100,
+    "uniform_order_probability": 0.25,
+    "exploration_temperature": 1.0,
+    "seed": 424242,
+    "amp": true,
+    "position_loss_weight": 1.0,
+    "position_weight": 0.5,
+    "self_play_start_step": 0,
+    "self_play_refresh_every": 4000,
+    "self_play_words": 20000,
+    "self_play_fraction": 0.5,
+    "presence_objective": "count",
+    "ema_decay": 0.0,
+    "ema_warmup_steps": 1000
+  },
+  "minutes": 244.7799289466658
+}

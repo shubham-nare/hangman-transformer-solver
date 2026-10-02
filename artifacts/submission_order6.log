@@ -1,0 +1,22 @@
+﻿device=cuda  words=250,000  checkpoint=artifacts\run5\best_model.pt
+fitting CharKN(order=6) on 225,300 train words...
+  fitted in 4s
+  building sparse table...
+  sparse table=(784285, 27)  142 MB  in 71s
+Using BlendPolicy (neural + char-LM beam; weight=0.38, order=6, beam=200, max_blanks=10)
+
+played in 47.5 min  (88 words/s)
+win rate    : 76.5296%
+total wrong : 768,212
+mean wrong  : 3.0728
+LB score~   : 76.4930
+
+wrote submission_order6.csv
+
+Submission: VALID
+  rows            : 250,000
+  win rate        : 76.5296%
+  total wrong     : 768,212
+  mean wrong/word : 3.0728
+  wasted guesses  : 0 (emitted after termination)
+  est. LB score   : 76.4930

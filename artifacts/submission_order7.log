@@ -1,0 +1,40 @@
+﻿device=cuda  words=250,000  checkpoint=artifacts\run6\best_model.pt
+fitting CharKN(order=7) on 225,300 train words...
+  fitted in 6s
+  building sparse table (build_sparse_table_order7)...
+  sparse table=(1240871, 27)  1684 MB  in 114s
+Using BlendPolicy (neural + char-LM beam; weight=0.38, order=7, beam=200, max_blanks=10)
+  turn  1: 249,999 active,       1/250,000 finished (  0.0%)  1.5 min
+  turn  2: 249,999 active,       1/250,000 finished (  0.0%)  3.2 min
+  turn  3: 249,962 active,      38/250,000 finished (  0.0%)  5.1 min
+  turn  4: 249,733 active,     267/250,000 finished (  0.1%)  6.9 min
+  turn  5: 248,718 active,   1,282/250,000 finished (  0.5%)  8.7 min
+  turn  6: 244,512 active,   5,488/250,000 finished (  2.2%)  10.2 min
+  turn  7: 230,740 active,  19,260/250,000 finished (  7.7%)  11.5 min
+  turn  8: 200,310 active,  49,690/250,000 finished ( 19.9%)  12.5 min
+  turn  9: 152,420 active,  97,580/250,000 finished ( 39.0%)  13.2 min
+  turn 10:  96,699 active, 153,301/250,000 finished ( 61.3%)  13.7 min
+  turn 11:  49,322 active, 200,678/250,000 finished ( 80.3%)  14.1 min
+  turn 12:  19,669 active, 230,331/250,000 finished ( 92.1%)  14.2 min
+  turn 13:   6,142 active, 243,858/250,000 finished ( 97.5%)  14.3 min
+  turn 14:   1,474 active, 248,526/250,000 finished ( 99.4%)  14.3 min
+  turn 15:     331 active, 249,669/250,000 finished ( 99.9%)  14.3 min
+  turn 16:      65 active, 249,935/250,000 finished (100.0%)  14.3 min
+  turn 17:      14 active, 249,986/250,000 finished (100.0%)  14.3 min
+  turn 18:       0 active, 250,000/250,000 finished (100.0%)  14.3 min
+
+played in 14.3 min  (291 words/s)
+win rate    : 77.1204%
+total wrong : 750,548
+mean wrong  : 3.0022
+LB score~   : 77.0847
+
+wrote submission_order7.csv
+
+Submission: VALID
+  rows            : 250,000
+  win rate        : 77.1204%
+  total wrong     : 750,548
+  mean wrong/word : 3.0022
+  wasted guesses  : 0 (emitted after termination)
+  est. LB score   : 77.0847

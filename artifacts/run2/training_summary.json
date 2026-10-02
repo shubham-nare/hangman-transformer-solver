@@ -1,0 +1,104 @@
+{
+  "best_win_rate": 58.1,
+  "checkpoint": "artifacts\\run2\\best_model.pt",
+  "history": [
+    {
+      "games": 3000,
+      "win_rate": 41.7,
+      "total_wrong": 14621,
+      "mean_wrong": 4.873666666666667,
+      "step": 2000
+    },
+    {
+      "games": 3000,
+      "win_rate": 48.233333333333334,
+      "total_wrong": 13780,
+      "mean_wrong": 4.593333333333334,
+      "step": 4000
+    },
+    {
+      "games": 3000,
+      "win_rate": 51.166666666666664,
+      "total_wrong": 13398,
+      "mean_wrong": 4.466,
+      "step": 6000
+    },
+    {
+      "games": 3000,
+      "win_rate": 53.266666666666666,
+      "total_wrong": 13129,
+      "mean_wrong": 4.376333333333333,
+      "step": 8000
+    },
+    {
+      "games": 3000,
+      "win_rate": 55.13333333333333,
+      "total_wrong": 12921,
+      "mean_wrong": 4.307,
+      "step": 10000
+    },
+    {
+      "games": 3000,
+      "win_rate": 56.833333333333336,
+      "total_wrong": 12740,
+      "mean_wrong": 4.246666666666667,
+      "step": 12000
+    },
+    {
+      "games": 3000,
+      "win_rate": 57.5,
+      "total_wrong": 12587,
+      "mean_wrong": 4.195666666666667,
+      "step": 14000
+    },
+    {
+      "games": 3000,
+      "win_rate": 57.266666666666666,
+      "total_wrong": 12558,
+      "mean_wrong": 4.186,
+      "step": 16000
+    },
+    {
+      "games": 3000,
+      "win_rate": 58.0,
+      "total_wrong": 12496,
+      "mean_wrong": 4.165333333333334,
+      "step": 18000
+    },
+    {
+      "games": 3000,
+      "win_rate": 58.1,
+      "total_wrong": 12478,
+      "mean_wrong": 4.1593333333333335,
+      "step": 20000
+    }
+  ],
+  "model_config": {
+    "d_model": 256,
+    "n_heads": 8,
+    "n_layers": 4,
+    "dim_feedforward": 768,
+    "dropout": 0.1,
+    "max_length": 32,
+    "n_letters": 26,
+    "use_position_head": true
+  },
+  "training_config": {
+    "steps": 20000,
+    "batch_size": 1024,
+    "learning_rate": 0.0004,
+    "weight_decay": 0.01,
+    "warmup_steps": 500,
+    "grad_clip": 1.0,
+    "eval_every": 2000,
+    "eval_words": 3000,
+    "log_every": 100,
+    "uniform_order_probability": 0.25,
+    "exploration_temperature": 1.0,
+    "seed": 20260901,
+    "amp": true,
+    "position_loss_weight": 1.0,
+    "position_weight": 0.5
+  },
+  "minutes": 60.32677508833332
+}

@@ -1,0 +1,35 @@
+﻿
+fitting CharKN(order=5) on 205,300 words...
+  held-out ppl 6.934
+building dense table...
+  (531441, 27)  57 MB  in 46s
+
+playing 3,000 HELD-OUT TRAIN words per config
+
+max_blanks=10  beam_width=200:
+    weight=0.00                     win= 66.93%  wrong=3.597  (3s)
+    weight=0.20                     win= 70.33%  wrong=3.473  (9s)
+    weight=0.35                     win= 70.87%  wrong=3.440  (9s)
+    weight=0.50                     win= 70.80%  wrong=3.449  (8s)
+    weight=0.65                     win= 70.07%  wrong=3.478  (8s)
+    weight=0.80                     win= 69.27%  wrong=3.529  (9s)
+    weight=1.00                     win= 67.73%  wrong=3.627  (9s)
+
+BEST: mb10_bw200_w0.35  ->  70.87%
+
+per-length: neural-only vs mb10_bw200_w0.35
+ len      n    neural     best    delta
+   3     36      0.0%    11.1%    +11.1
+   4     57     17.5%    15.8%     -1.8
+   5    150     18.7%    24.7%     +6.0
+   6    247     38.1%    38.1%     +0.0
+   7    356     45.2%    50.3%     +5.1
+   8    446     60.8%    67.3%     +6.5
+   9    397     72.8%    77.3%     +4.5
+  10    346     83.8%    87.6%     +3.8
+  11    309     85.1%    89.6%     +4.5
+  12    240     88.3%    91.7%     +3.3
+  13    166     95.8%    97.0%     +1.2
+  14    112     93.8%    96.4%     +2.7
+  15     62     96.8%    98.4%     +1.6
+  16     34     94.1%    94.1%     +0.0

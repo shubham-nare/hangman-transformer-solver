@@ -1,0 +1,21 @@
+﻿device=cuda  words=250,000  checkpoint=artifacts\run5\best_model.pt
+fitting CharKN(order=5) on 225,300 train words...
+  fitted in 2s; building dense table...
+  table (531441, 27)  57 MB  in 47s
+Using BlendPolicy (neural + char-LM beam; weight=0.38, order=5, beam=200, max_blanks=10)
+
+played in 12.8 min  (326 words/s)
+win rate    : 73.8732%
+total wrong : 818,301
+mean wrong  : 3.2732
+LB score~   : 73.8342
+
+wrote submission_blend.csv
+
+Submission: VALID
+  rows            : 250,000
+  win rate        : 73.8732%
+  total wrong     : 818,301
+  mean wrong/word : 3.2732
+  wasted guesses  : 0 (emitted after termination)
+  est. LB score   : 73.8342

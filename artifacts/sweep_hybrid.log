@@ -1,0 +1,26 @@
+﻿
+checkpoint: artifacts/run5/best_model.pt
+playing 4,000 sampled test words on cuda
+
+vocab EXT (nltk+sowpods)   : 397,745 words
+vocab ALL (+train.txt)     : 462,473 words
+
+baseline:
+  neural only                       win= 69.35%  wrong=3.493  LB~69.308  (7s)
+
+train.txt in vocab or not (pivot=100):
+python : C:\Users\kumar\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\_core\_methods.py:52: RuntimeWarning: overflow encountered in reduce
+At line:1 char:382
++ ... Hackathon"; python -u -m scripts.sweep_hybrid --checkpoint artifacts/ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\kumar\...tered in reduce:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  ALL  (nltk+sowpods+train)         win= 86.22%  wrong=2.394  LB~86.197  (19s)
+  EXT  (nltk+sowpods only)          win= 86.67%  wrong=2.352  LB~86.647  (18s)
+
+alpha_pivot sweep on EXT vocab:
+  pivot=100                         win= 86.67%  wrong=2.352  LB~86.647  (12s)
+  pivot=300                         win= 86.75%  wrong=2.365  LB~86.722  (18s)
+  pivot=1000                        win= 86.80%  wrong=2.363  LB~86.772  (59s)

@@ -1,0 +1,7 @@
+﻿0A79D5AF3089E36E  run6_best_model.pt  44662773 bytes
+2F91F1BDD6E222AD  submission.csv  4639031 bytes
+BD0077CA1D5B7234  submission_notebook.ipynb  190687 bytes
+
+Score: 77.1204% win rate, est LB 77.0847, 250,000 rows, VALID
+Model: run6 Transformer (d384/6L/ff1536, 11.2M params) + order-7 KN char-LM beam, blend 0.38
+Sealed: 2026-09-03 11:19

@@ -1,0 +1,9 @@
+﻿
+fitting CharKN(order=6)...
+  held-out ppl 6.392
+playing 1,000 HELD-OUT TRAIN words per weight
+beam_width=200  max_blanks=8
+
+  weight     win%   mean_wrong    secs
+    0.00   68.80%        3.489       1
+    0.30   73.10%        3.230     113

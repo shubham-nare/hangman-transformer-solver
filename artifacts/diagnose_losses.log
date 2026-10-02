@@ -1,0 +1,74 @@
+﻿
+playing 6,000 HELD-OUT TRAIN words (test.txt untouched)
+
+overall win rate: 66.87%  (4,012/6,000)
+
+1. WIN RATE BY LENGTH
+    len      n    win%  mean_wrong   share_of_losses
+      3     61    0.0%        6.00     3.1% ##
+      4    138   13.8%        5.67     6.0% ###
+      5    291   22.3%        5.47    11.4% #######
+      6    492   37.0%        5.09    15.6% ##########
+      7    707   45.5%        4.73    19.4% ############
+      8    861   56.3%        4.37    18.9% ############
+      9    784   72.2%        3.72    11.0% #######
+     10    727   81.3%        3.21     6.8% ####
+     11    618   89.2%        2.59     3.4% ##
+     12    463   91.4%        2.24     2.0% #
+     13    340   94.4%        1.78     1.0% 
+     14    218   95.4%        1.54     0.5% 
+     15    142   97.9%        1.13     0.2% 
+     16     69   92.8%        1.48     0.3% 
+     17     41  100.0%        0.66     0.0% 
+     18     22  100.0%        0.55     0.0% 
+
+2. LOSS ANATOMY (how close were we when we died?)
+    blanks_left   count     pct
+              1     770   38.7%
+              2     606   30.5%
+              3     372   18.7%
+              4     163    8.2%
+              5      51    2.6%
+              6      22    1.1%
+              7       3    0.2%
+              8       1    0.1%
+   -> died with <=2 blanks left: 69.2% of losses (near misses)
+
+3. MISS TIMING (turn index of each strike; turn 0 = first guess)
+    turn  misses_in_wins  misses_in_losses
+       0             980               913
+       1           1,042               950
+       2             971             1,024
+       3             871               946
+       4             924             1,099
+       5             893             1,121
+       6             899             1,222
+       7             888             1,212
+       8             785             1,123
+       9             619               944
+      10             419               640
+      11             218               411
+      12             103               219
+      13              19                78
+      14               7                18
+      15               0                 6
+
+4. FIRST GUESS vs TRAIN-OPTIMAL (turn 1 occurs in 100% of games)
+    len   model  train_opt   match
+      3       a          a   yes
+      4       a          a   yes
+      5       a          a   yes
+      6       e          e   yes
+      7       e          e   yes
+      8       e          e   yes
+      9       e          e   yes
+     10       e          e   yes
+     11       e          e   yes
+     12       e          e   yes
+     13       e          e   yes
+     14       e          i   NO
+     15       i          i   yes
+     16       e          i   NO
+     17       i          i   yes
+     18       i          i   yes
+   -> games whose first guess differs from train-optimal: 4.8%

@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local tooling and private working notes
+.claude/
+CONTEXT.md
+
+# Competition data -- not redistributable; see README section 6
+data/
+
+# External dictionaries from the abandoned experiment, and its output
+abandoned_experiments/data/
+abandoned_experiments/output/
+
+# Model weights and language-model tables
+*.pt
+*.npy
+
+# Generated submissions
+*.csv
+
+# Sealed snapshots: keep the manifests, not the duplicated code or binaries
+FINAL_*/code_snapshot/
+FINAL_*/*.ipynb
+submissions_verified/
+
+# Superseded notebook builds; submission_notebook.ipynb is the sealed final one
+submission_notebook_v*.ipynb
+
+# Kaggle kernel push config (account-specific)
+kaggle_kernel/kernel-metadata.json
+
+# Raw Kaggle kernel log
+artifacts/kaggle_log/

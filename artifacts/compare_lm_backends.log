@@ -1,0 +1,22 @@
+﻿playing 8,000 HELD-OUT TRAIN words (test.txt untouched)
+
+neural LM: context=4  params=801,051  held-out ppl=7.343
+tabulating neural LM...
+  (531441, 27)  57 MB  in 1s
+CharKN(order=5) held-out ppl=6.925
+tabulating Kneser-Ney...
+
+blended win rate, identical beam, only the LM table differs:
+  Kneser-Ney backend          win= 73.33%  wrong=3.235  (25s)
+  Neural Transformer backend  win= 71.55%  wrong=3.325  (24s)
+  interpolated (neural=0.3)   win= 73.01%  wrong=3.244  (25s)
+  interpolated (neural=0.5)   win= 72.69%  wrong=3.259  (25s)
+  interpolated (neural=0.7)   win= 72.29%  wrong=3.281  (25s)
+
+paired comparisons vs Kneser-Ney:
+  neural             delta=-1.78pts  won=309 lost=451  p=0.0000  Kneser-Ney wins
+  mix0.3             delta=-0.31pts  won=138 lost=163  p=0.1496  indistinguishable
+  mix0.5             delta=-0.64pts  won=198 lost=249  p=0.0159  Kneser-Ney wins
+  mix0.7             delta=-1.04pts  won=232 lost=315  p=0.0004  Kneser-Ney wins
+
+BEST BACKEND: kneser-ney at 73.33%
